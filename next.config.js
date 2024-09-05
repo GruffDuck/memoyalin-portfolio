@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Statik dışa aktarmayı etkinleştirir
   images: {
     remotePatterns: [
       {
@@ -10,7 +9,7 @@ const nextConfig = {
     ],
   },
   experimental: {
-    serverActions: false, // Sunucu eylemlerini devre dışı bırakın
+    serverActions: true, // Sunucu eylemlerini devre dışı bırakın
   },
 };
 
